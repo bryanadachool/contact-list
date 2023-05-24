@@ -1,33 +1,24 @@
 
-let listContactos = [];
-function contactos(a){
-let lista = ['nombre','brayan','rodriguez',3054678717,'brayanrodriguez048@gmail.com'];
-a = lista
-console.log (a);
-
-
+let listContactos = añadirContactos();
+function añadirContactos(contactos){
+let lista = ['brayan','rodriguez',3054678717,'brayanrodriguez048@gmail.com'];
+contactos = lista;
+for (let i = 0; i < contactos.length; i++) {
+    const element = contactos[i];
+   
+   return contactos.join(" ");
 }
-function actualizar(b){
-  let listActualizar = ['rafael','reales',73272636,'email'];
+}
+function borrar(eliminar){
+ eliminar= listContactos;
+ eliminar ="";
+ return eliminar;
+ } 
 
-  if (b!==listActualizar) {
-    console.log(listActualizar);
+
+
+
+function imprimir(imprimir) {
   
 }
-else{
-  console.log("no se ha modificado nada");
-}
-}
-
-function agregarContactos(c) {
-  let agregarContactos =[];
-  if (c=="") {
-    console.log("no a agregado ningun contacto");
-    
-  }
-  else{
-    console.log(agregarContactos);
-  }
-  
-}
-console.log(contactos(listContactos),actualizar(listContactos),agregarContactos(listContactos));
+console.log(listContactos);
