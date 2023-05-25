@@ -1,24 +1,22 @@
 
-let listContactos = añadirContactos();
-function añadirContactos(contactos){
+
+function añadirContactos(){
 let lista = ['brayan','rodriguez',3054678717,'brayanrodriguez048@gmail.com'];
-contactos = lista;
-for (let i = 0; i < contactos.length; i++) {
-    const element = contactos[i];
+
+for (let i = 0; i < lista.length; i++) {
+    const element = lista[i];
    
-   return contactos.join(" ");
+   return lista.join(" ");
 }
 }
 function borrar(eliminar){
- eliminar= listContactos;
- eliminar ="";
+ eliminar ="no hay contactos";
  return eliminar;
  } 
+function mostrar() {
 
-
-
-
-function imprimir(imprimir) {
+   console.log(añadirContactos());
+console.log(borrar(añadirContactos()))
   
 }
-console.log(listContactos);
+console.log(mostrar());
