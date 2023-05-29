@@ -1,22 +1,24 @@
+let contac 
+    
+  let listContact = '{ "contactos" : [' +
+'{ "id":"1" ,'+
+  '"nombres":"brayan ernesto",'+
+  '"apellidos":"rodriguez navarro",'+
+  '"telefono":"3054678717",'+
+'"ubicaciones":['+
+'{"ciudad":"valledupar",'+
+'"direccion":"el porvenir"}]}]}';
+ let obj = JSON.parse(listContact);
 
-
-function añadirContactos(){
-let lista = ['brayan','rodriguez',3054678717,'brayanrodriguez048@gmail.com'];
-
-for (let i = 0; i < lista.length; i++) {
-    const element = lista[i];
-   
-   return lista.join(" ");
+console.log(obj.contactos[0].ubicaciones[0].ciudad);
+function addListContact(){
+obj =obj.push('{ "id":"1" ,'+
+'"nombres":"elkin",'+
+'"apellidos":"redondo",'+
+'"telefono":"3054678717",'+
+'"ubicaciones":['+
+'{"ciudad":"valledupar",'+
+'"direccion":"el porvenir"}]}');
+console.log(obj.contactos[0]);
 }
-}
-function borrar(eliminar){
- eliminar ="no hay contactos";
- return eliminar;
- } 
-function mostrar() {
-
-   console.log(añadirContactos());
-console.log(borrar(añadirContactos()))
-  
-}
-console.log(mostrar());
+console.log(addListContact());
