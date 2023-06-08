@@ -5,28 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lista de contactos</title>
-    <script type="text/javascript" src="js/java.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>
-    lista de contactos
-  </h2>
-    <ul>
-        <li>lista de contactos</li>
-        <li>yanet olmedo <span class="cerrar">&times;</span></li>
-        <li>rafael <span   class="cerrar">&times;</span></li>
-        <li> yerlis <span class="cerrar">&times;</span></li>
-    </ul>
-    <script>
-    
- let cerrarBtn = document.getElementsByClassName("cerrar");
- for (let i = 0; i < cerrarBtn.length; i++) {
- cerrarBtn[i].addEventListener("click", function() {
-  this.parentElement.style.display = 'none';
- });
-}
-    </script>
+ 
+  <div class="container">
+   
+      <h2>agenda de contactos</h2>
+   
+    <div class="formulario-datos">
+      <div class="input-container">
+        <span class="material-symbols-outlined icon">
+          person
+          </span>
+        <input type="text" class="input-field" class="name"  placeholder="insert name">
+     
 
+      </div>
+      <div class="input-container">
+        <span class="material-symbols-outlined icon">
+          person
+          </span>
+        <input type="text" class="input-field lastName"placeholder="insert lastName">
+      
+      </div>
+      <div class="input-container">
+        <span class="material-symbols-outlined icon">
+          call
+          </span>
+        <input type="number" class="input-field telephoneNumber" placeholder="insert telephoneNumber">
+ 
+      </div>
+      <div class="input-container">
+        <span class="material-symbols-outlined icon">
+          mail
+          </span>
+        <input type="email" class="input-field email" placeholder="insert email">
+      
+      </div>
+      <div class="input-container">
+        <span class="material-symbols-outlined icon">
+          location_on
+          </span>
+        <input type="text" class="input-field direction" placeholder="insert direction">
+   
+      </div>
+    <button class="addBtn">agregar contactos</button>
+    <div class="listContact">
+      <div class="Contact">
+        <h3>nombre</h3>
+        <p>lastName</p>
+        <p>telephoneNumber</p>
+        <p>email</p>
+        <p>direction</p>
+        <span class="material-symbols-outlined btnDelete">
+          delete
+          </span>
+         </div>
+    </div>
+   
+    </div>
+  </div>
+<script src="js/java.js"></script>
+<script src="js/funciones.js"></script>
 </body>
 </html>
