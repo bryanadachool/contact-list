@@ -37,7 +37,7 @@ body{
     padding: 10px;
     outline: none;
 }
-.btn{
+.addBtn{
     background-color: dodgerblue;
     color: white;
     padding: 15px 20px;
@@ -45,7 +45,7 @@ body{
     width: 100%;
     opacity: 0.9;
 }
-.btn:hover{
+.addBtn:hover{
     opacity:1 ;
     cursor: pointer;
 }
