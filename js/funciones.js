@@ -1,14 +1,7 @@
-let contactos = ['jose','prada',3004368];
+const saveContact=(db,contact)=>{
+    db.setItem(contact.id, JSON.stringify(contact));
+window.location.href='/xampp/htdocs/lista%20de%20contactos/index.html'
+}
 
-for (let i = 0; i < contactos.length; i++) {
-    const element = contactos[i];
-    contactos[0]="leonardo";
-    console.log(contactos[i]);
-    }
 
-   
-    
-   
-    
-
-console.log(contactos.join(" "));
+ 
